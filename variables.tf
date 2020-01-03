@@ -76,7 +76,11 @@ variable "event_resource" {
   description = "(Optional) If provided, the name of the resource from which to observe events. For example, 'myBucket' or 'projects/my-project/topics/my-topic'"
   default     = null
 }
-
+variable "retry" {
+  type        = bool
+  description = "(Optional) If provided, indicates wether the function should retry if a failure was detected"
+  default     = false
+}
 # @TODO
 
 # region

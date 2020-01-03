@@ -29,7 +29,7 @@ resource "google_cloudfunctions_function" "function" {
     event_type = var.event_type
     resource   = var.event_resource
     failure_policy {
-      retry = true
+      retry = var.retry
     }
   }
 }
