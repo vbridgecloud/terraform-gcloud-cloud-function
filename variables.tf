@@ -81,8 +81,13 @@ variable "retry" {
   description = "(Optional) If provided, indicates wether the function should retry if a failure was detected"
   default     = false
 }
+
+variable "max_instances" {
+  type        = number
+  description = "(Optional) The limit on the maximum number of function instances that may coexist at a given time."
+  default     = 1000 # unlimited https://cloud.google.com/functions/quotas#additional_quotas_for_background_functions
+}
 # @TODO
 
 # region
 # labels
-# max_instances
