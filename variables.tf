@@ -53,21 +53,6 @@ variable "environment_variables" {
   description = "(Optional) A set of key/value environment variable pairs to assign to the function."
   default     = {}
 }
-variable "secret_key" {
-  type        = string
-  description = "(Optional) A set of key/value secret variable pairs to assign to the function."
-  default     = ""
-}
-variable "secret_link" {
-  type        = string
-  description = "(Optional) A set of key/value secret variable pairs to assign to the function."
-  default     = ""
-}
-variable "secret_version" {
-  type        = string
-  description = "(Optional) A set of key/value secret variable pairs to assign to the function."
-  default     = ""
-}
 variable "service_account_email" {
   type        = string
   description = "(Optional) If provided, the self-provided service account to run the function with."
