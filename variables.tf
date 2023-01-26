@@ -56,17 +56,17 @@ variable "environment_variables" {
 variable "secret_key" {
   type        = string
   description = "(Optional) A set of key/value secret variable pairs to assign to the function."
-  default     = {}
+  default     = ""
 }
 variable "secret_link" {
   type        = string
   description = "(Optional) A set of key/value secret variable pairs to assign to the function."
-  default     = {}
+  default     = ""
 }
 variable "secret_version" {
   type        = string
   description = "(Optional) A set of key/value secret variable pairs to assign to the function."
-  default     = {}
+  default     = ""
 }
 variable "service_account_email" {
   type        = string
