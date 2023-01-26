@@ -53,6 +53,11 @@ variable "environment_variables" {
   description = "(Optional) A set of key/value environment variable pairs to assign to the function."
   default     = {}
 }
+variable "secret_environment_variables" {
+  type        = map
+  description = "(Optional) A set of key/value secret variable pairs to assign to the function."
+  default     = {}
+}
 
 variable "service_account_email" {
   type        = string

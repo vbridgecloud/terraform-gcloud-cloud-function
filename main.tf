@@ -24,6 +24,7 @@ resource "google_cloudfunctions_function" "function" {
   runtime               = var.runtime
   max_instances         = var.max_instances
   environment_variables = var.environment_variables
+  secret_environment_variables = var.secret_environment_variables
   service_account_email = var.service_account_email
   vpc_connector         = var.vpc_connector
   event_trigger {
